@@ -1,0 +1,10 @@
+<div *ngIf = "user">
+  <div class="div">
+    
+   <ion-avatar [ngClass]="{'custom-background': isMenu }" >
+    <img class="round" [src]="user.photo|| 'assets/imagens/no-photo.jpg'">
+  </ion-avatar></div>
+ 
+  <h2 text-center >{{ user.name }}</h2>
+  <p text-center>@{{ user.username }}</p>
+</div>
